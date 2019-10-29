@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_station_view_survey_stakingoutline_anothermap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="里程："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textview_offset_view_survey_stakingoutline_anothermap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="偏距："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|fill"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_save_view_survey_stakingoutline_anothermap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="存点" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <com.padsurveysystem.MapTilesView
+                android:id="@+id/maptiles_view_survey_stakingoutline_anothermap"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp" />
+
+            <ZoomControls
+                android:id="@+id/zoomcontrols_view_survey_stakingoutline_anothermap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/locationbutton_view_survey_stakingoutline_anothermap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/btn_myl_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

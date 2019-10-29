@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <group
+        android:id="@+id/group_viewstyle_menu_setmapview"
+        android:layout_width="wrap_content"
+        android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/radiobutton_g_menu_setmapview"
+            android:title="显示大地坐标"/>
+
+        <item
+            android:id="@+id/radiobutton_c_menu_setmapview"
+            android:checked="true"
+            android:title="显示网格坐标"/>
+    </group>
+
+    <group
+        android:id="@+id/group_selectmap__menu_setmapview"
+        android:layout_width="wrap_content"
+        android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/radiobutton_nomap_menu_setmapview"
+            android:title="无图模式"/>
+
+        <item
+            android:id="@+id/radiobutton_googlemap_menu_setmapview"
+            android:checked="true"
+            android:title="谷歌地图"/>
+
+        <item
+            android:id="@+id/radiobutton_anothermap_menu_setmapview"
+            android:checked="true"
+            android:title="第三方地图"/>
+    </group>
+
+</menu>

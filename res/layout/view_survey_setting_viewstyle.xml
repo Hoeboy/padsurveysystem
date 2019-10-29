@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:gravity="center|center_vertical|fill_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="坐标显示设置"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="style" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_latlon_survey_setting_viewstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示大地坐标"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_grid_survey_setting_viewstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示网格坐标"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:gravity="center|center_vertical|fill_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地图显示设置"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="style" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_nomap_survey_setting_viewstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无图模式"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_googlemap_survey_setting_viewstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="谷歌地图"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_anothermap_survey_setting_viewstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方地图"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_save_survey_setting_viewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

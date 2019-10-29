@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="大地坐标点："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/edittext_wgs84_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.61"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button_select84_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:text="选择" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="网格坐标点："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/edittext_grid_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.61"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button_selectgrid_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:text="选择" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:baselineAligned="false"
+        android:gravity="fill"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_add_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:text="增加" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_view_setting_coordinatetransformation_addpoint"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_weight="0.65"
+        android:orientation="horizontal" >
+            tools:listitem="@android:layout/simple_list_item_1" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|fill|fill_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_edit_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:text="修改" />
+
+        <Button
+            android:id="@+id/button_remove_view_setting_coordinatetransformation_addpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.11"
+            android:text="移除" />
+    </LinearLayout>
+
+</LinearLayout>

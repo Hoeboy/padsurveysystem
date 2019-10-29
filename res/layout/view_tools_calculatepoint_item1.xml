@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="计算方法："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_view_tools_calculatepoint_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|fill_horizontal" >
+
+            <TextView
+                android:id="@+id/textViewZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起点1："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edittext_start1_view_tools_calculatepoint_item1"
+                android:layout_width="162dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.89"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/button_select_start1_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终点1："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edittext_end1_view_tools_calculatepoint_item1"
+                android:layout_width="162dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.89"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/button_select_end1_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="选择" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|fill_horizontal" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起点2："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edittext_start2_view_tools_calculatepoint_item1"
+                android:layout_width="162dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.89"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/button_select_start2_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|fill_horizontal" >
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终点2："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edittext_end2_view_tools_calculatepoint_item1"
+                android:layout_width="141dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.70"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/button_select_end2_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button_calculate_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="计算" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|fill_horizontal" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点名："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edittext_pointname_view_tools_calculatepoint_item1"
+                android:layout_width="162dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.89"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|fill_horizontal" >
+
+            <TextView
+                android:id="@+id/textview_x_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      X："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|fill_horizontal" >
+
+            <TextView
+                android:id="@+id/textview_y_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      Y："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_save_view_tools_calculatepoint_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="保存" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
